@@ -18973,3 +18973,21 @@ footer {
     .carousel-inner.dark {
       transform: translateY(-20%);
       width: 85%; } }
+
+.gallery2 {
+  display: flex;
+  flex-direction: column;
+  gap: 3.2rem;
+  text-align: center; }
+  .gallery2__wrap {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 3.2rem;
+    row-gap: 3.2rem; }
+    @media only screen and (max-width: 767px) {
+      .gallery2__wrap {
+        grid-template-columns: repeat(1, 1fr); } }
+    .gallery2__wrap--product {
+      aspect-ratio: 704/336;
+      border-radius: 0;
+      border: none; }

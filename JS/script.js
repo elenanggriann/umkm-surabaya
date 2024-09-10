@@ -4,8 +4,12 @@ $(document).ready(function() {
 
   // Saat tombol gallery ditekan, munculkan popup
   $('.gallery__product').on('click', function() {
-      $('.carousel-popup').fadeIn();
+      $('#carousel-popup1').fadeIn();
   });
+
+  $('.gallery2__wrap--product').on('click', function() {
+    $('#carousel-popup2').fadeIn();
+});
 
   // Saat carousel-inner ditekan, sembunyikan popup
   $('.carousel-popup__bg').on('click', function() {
