@@ -33,6 +33,7 @@ ORDER: Base + typography > general layout + grid > page layout > components
    * Copyright 2011-2024 The Bootstrap Authors
    * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
    */
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap");
 :root,
 [data-bs-theme="light"] {
@@ -18597,7 +18598,8 @@ html {
       font-size: 54.6875%; } }
 
 body {
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  background-color: #000000; }
 
 .section-wrap {
   padding-top: 10rem; }
@@ -18617,32 +18619,32 @@ body {
     height: 100%; }
 
 body {
-  font-family: "Plus Jakarta Sans", sans-serif;
+  font-family: "Inter", sans-serif;
   font-optical-sizing: auto;
   letter-spacing: -0.12em;
   font-weight: 500;
   font-style: normal;
-  color: rgba(24, 24, 27, 0.8); }
+  color: rgba(255, 255, 255, 0.8); }
 
 .heading-1 {
   font-size: 4.2rem;
   line-height: 1.26em;
   font-weight: 700;
-  color: #18181B;
+  color: #FFFFFF;
   margin-bottom: 0; }
 
 .heading-2 {
   font-size: 3.2rem;
   line-height: 1.26em;
   font-weight: 700;
-  color: #18181B;
+  color: #FFFFFF;
   margin-bottom: 0; }
 
 .heading-3 {
   font-size: 2.8rem;
   line-height: 1.26em;
   font-weight: 700;
-  color: #18181B;
+  color: #FFFFFF;
   margin-bottom: 0; }
 
 p {
@@ -18655,6 +18657,22 @@ p {
 
 .text-center {
   text-align: center; }
+
+a {
+  text-decoration: none;
+  letter-spacing: normal;
+  font-size: 16px;
+  line-height: 24px; }
+
+.button {
+  padding: 10px 16px;
+  border-radius: 2px;
+  background-color: #EF4444;
+  color: #FFFFFF;
+  font-weight: 600; }
+
+.button:hover {
+  background-color: #DC2626; }
 
 .product__card {
   display: flex;
@@ -18686,15 +18704,15 @@ p {
   text-decoration: none; }
 
 .product__card--button a:hover {
-  color: rgba(24, 24, 27, 0.6); }
+  color: #18181B; }
 
 nav {
-  background-color: #F8FAFC; }
+  background-color: #18181B; }
 
 .nav__wrap {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
   padding: 2.4rem 3.2rem; }
 
 .logo {
@@ -18706,18 +18724,18 @@ nav {
     width: 3.8rem;
     aspect-ratio: 3.8/3.6; }
   .logo__text {
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
     font-size: 2.4rem;
     line-height: 1.26em;
     font-weight: 700;
-    color: #18181B; }
+    color: #FFFFFF; }
 
 footer {
-  background-color: #F8FAFC;
+  background-color: #18181B;
   padding: 6.4rem 4.2rem;
   margin-top: 20rem; }
-
-footer p {
-  color: rgba(24, 24, 27, 0.6); }
 
 .footer__wrap {
   display: flex;
@@ -18735,12 +18753,12 @@ footer p {
   display: flex;
   gap: 1.2rem; }
   .footer__right--socials:hover {
-    color: rgba(24, 24, 27, 0.6); }
+    color: #FFFFFF; }
 
 .footer__line {
   width: 100%;
   height: 1px;
-  background-color: #D9D9D9;
+  background-color: #EF4444;
   margin: 3.2rem 0; }
 
 .footer__copyright {
@@ -18751,7 +18769,7 @@ footer p {
 .hero {
   display: flex;
   justify-content: flex-start;
-  align-items: center;
+  align-items: flex-start;
   gap: 10rem; }
   @media only screen and (max-width: 1199px) {
     .hero {
@@ -18760,7 +18778,7 @@ footer p {
   .hero__content {
     display: flex;
     flex-direction: column;
-    gap: 1.6rem;
+    gap: 3.2rem;
     text-align: left;
     width: 40%;
     max-width: 54.5rem; }
@@ -18771,15 +18789,15 @@ footer p {
     .hero__content--headline {
       display: flex;
       flex-direction: column;
-      gap: 1.6rem; }
+      gap: 1.6rem;
+      margin-bottom: 1rem; }
     .hero__content--details {
       display: flex;
       flex-direction: column;
-      gap: 0.6rem; }
+      gap: 1rem; }
     .hero__content--maps {
       width: 100%;
-      height: 28.9rem;
-      margin-top: 2.6rem; }
+      height: 28.9rem; }
 
 .carousel {
   width: 45%;
@@ -18802,7 +18820,7 @@ footer p {
   .carousel-indicators [data-bs-target] {
     height: 10px;
     width: 25px;
-    background-color: #1D4ED8;
+    background-color: #DC2626;
     opacity: 0.2; }
   .carousel-indicators .active {
     opacity: 1; }
@@ -18823,3 +18841,18 @@ footer p {
   @media only screen and (max-width: 575px) {
     .products__wrap {
       grid-template-columns: repeat(1, 1fr); } }
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  column-gap: 3.2rem;
+  row-gap: 3.2rem; }
+  @media only screen and (max-width: 991px) {
+    .gallery {
+      grid-template-columns: repeat(2, 1fr); } }
+  @media only screen and (max-width: 575px) {
+    .gallery {
+      grid-template-columns: repeat(1, 1fr); } }
+  .gallery__product {
+    aspect-ratio: 1/1;
+    overflow: hidden; }
