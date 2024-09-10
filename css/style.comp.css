@@ -18887,7 +18887,9 @@ footer {
       grid-template-columns: repeat(1, 1fr); } }
   .gallery__product {
     aspect-ratio: 1/1;
-    overflow: hidden; }
+    overflow: hidden;
+    border-radius: 0;
+    border: none; }
 
 .carousel-control-prev,
 .carousel-control-next {
