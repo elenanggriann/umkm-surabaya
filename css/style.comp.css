@@ -18606,6 +18606,9 @@ body {
 
 .container {
   padding: 0 3.2rem; }
+  @media only screen and (max-width: 767px) {
+    .container {
+      padding: 0 1.6rem; } }
 
 .image__full {
   object-fit: contain;
@@ -18713,6 +18716,9 @@ nav {
   align-items: center;
   justify-content: space-between;
   padding: 2.4rem 3.2rem; }
+  @media only screen and (max-width: 767px) {
+    .nav__wrap {
+      padding: 2.4rem 1.6rem; } }
 
 .logo {
   display: flex;
@@ -18873,12 +18879,23 @@ footer {
   top: 50%;
   transform: translateY(-50%);
   z-index: 3; }
+  @media only screen and (max-width: 767px) {
+    .carousel-control-prev,
+    .carousel-control-next {
+      width: 32px;
+      height: 32px; } }
 
 .carousel-control-prev {
   left: 64px; }
+  @media only screen and (max-width: 767px) {
+    .carousel-control-prev {
+      left: 1.6rem; } }
 
 .carousel-control-next {
   right: 64px; }
+  @media only screen and (max-width: 767px) {
+    .carousel-control-next {
+      right: 1.6rem; } }
 
 .carousel-popup {
   z-index: 100;
