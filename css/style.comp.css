@@ -18897,7 +18897,7 @@ footer {
   height: 64px;
   border-radius: 50%;
   background: #FFFFFF;
-  top: 50%;
+  top: 70%;
   transform: translateY(-50%);
   z-index: 3; }
   @media only screen and (max-width: 767px) {
@@ -18910,13 +18910,13 @@ footer {
   left: 64px; }
   @media only screen and (max-width: 767px) {
     .carousel-control-prev {
-      left: 1.6rem; } }
+      left: 40%; } }
 
 .carousel-control-next {
   right: 64px; }
   @media only screen and (max-width: 767px) {
     .carousel-control-next {
-      right: 1.6rem; } }
+      right: 40%; } }
 
 .carousel-popup {
   z-index: 100;
