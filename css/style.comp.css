@@ -18672,6 +18672,9 @@ a {
   background-color: #EF4444;
   color: #FFFFFF;
   font-weight: 600; }
+  @media only screen and (max-width: 767px) {
+    .button {
+      padding: 8px 14px; } }
 
 .button:hover {
   background-color: #DC2626; }
@@ -18725,9 +18728,15 @@ nav {
   gap: 1.6rem;
   align-items: center;
   text-decoration: none; }
+  @media only screen and (max-width: 767px) {
+    .logo {
+      gap: 1rem; } }
   .logo__icon {
     width: 3.8rem;
     aspect-ratio: 3.8/3.6; }
+    @media only screen and (max-width: 767px) {
+      .logo__icon {
+        width: 3.2rem; } }
   .logo__text {
     font-family: "Plus Jakarta Sans", sans-serif;
     font-optical-sizing: auto;
@@ -18736,17 +18745,27 @@ nav {
     line-height: 1.26em;
     font-weight: 700;
     color: #FFFFFF; }
+    @media only screen and (max-width: 767px) {
+      .logo__text {
+        font-size: 2rem; } }
 
 footer {
   background-color: #18181B;
   padding: 6.4rem 4.2rem;
   margin-top: 20rem; }
+  @media only screen and (max-width: 767px) {
+    footer {
+      padding: 6.4rem 1.6rem; } }
 
 .footer__wrap {
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
   gap: 4.8rem; }
+  @media only screen and (max-width: 767px) {
+    .footer__wrap {
+      align-items: flex-start;
+      flex-direction: column; } }
 
 .footer__left {
   max-width: 29rem;
